@@ -1,0 +1,408 @@
+[
+	{
+	  "name": "Construção de Ponte sobre o Rio Douro",
+	  "type": "Construção",
+	  "institution": "Câmara Municipal do Porto",
+	  "price": "5.000.000€",
+	  "publish_date": "2024-07-10",
+	  "submission_date": "2024-10-08",
+	  "location": "Porto"
+	},
+	{
+	  "name": "Modernização da Linha Ferroviária do Norte",
+	  "type": "Transportes",
+	  "institution": "Infraestruturas de Portugal",
+	  "price": "12.000.000€",
+	  "publish_date": "2024-11-11",
+	  "submission_date": "2024-11-30",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Fornecimento de Equipamentos Médicos para Hospitais Públicos",
+	  "type": "Saúde",
+	  "institution": "Ministério da Saúde",
+	  "price": "3.500.000€",
+	  "publish_date": "2024-09-05",
+	  "submission_date": "2024-12-01",
+	  "location": "Coimbra"
+	},
+	{
+	  "name": "Implementação de Sistema de Energia Solar em Escolas",
+	  "type": "Energia",
+	  "institution": "Agência Portuguesa do Ambiente",
+	  "price": "2.000.000€",
+	  "publish_date": "2024-07-20",
+	  "submission_date": "2024-10-18",
+	  "location": "Faro"
+	},
+	{
+	  "name": "Aquisição de Serviços de Catering para Eventos Municipais",
+	  "type": "Catering",
+	  "institution": "Câmara Municipal de Braga",
+	  "price": "500.000€",
+	  "publish_date": "2024-08-15",
+	  "submission_date": "2024-11-12",
+	  "location": "Braga"
+	},
+	{
+	  "name": "Requalificação Urbana da Zona Ribeirinha",
+	  "type": "Urbanismo",
+	  "institution": "Câmara Municipal de Aveiro",
+	  "price": "4.000.000€",
+	  "publish_date": "2024-07-25",
+	  "submission_date": "2024-10-23",
+	  "location": "Aveiro"
+	},
+	{
+	  "name": "Melhoria da Rede de Saneamento Básico",
+	  "type": "Infraestruturas",
+	  "institution": "Águas de Portugal",
+	  "price": "6.000.000€",
+	  "publish_date": "2024-08-10",
+	  "submission_date": "2024-11-08",
+	  "location": "Setúbal"
+	},
+	{
+	  "name": "Digitalização de Arquivos Históricos Nacionais",
+	  "type": "Tecnologia",
+	  "institution": "Arquivo Nacional",
+	  "price": "1.200.000€",
+	  "publish_date": "2024-09-01",
+	  "submission_date": "2024-11-30",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Construção de Centro Desportivo Municipal",
+	  "type": "Desporto",
+	  "institution": "Câmara Municipal de Viseu",
+	  "price": "2.800.000€",
+	  "publish_date": "2024-07-05",
+	  "submission_date": "2024-10-03",
+	  "location": "Viseu"
+	},
+	{
+	  "name": "Fornecimento de Serviços de Logística para Escolas Públicas",
+	  "type": "Logística",
+	  "institution": "Ministério da Educação",
+	  "price": "700.000€",
+	  "publish_date": "2024-08-20",
+	  "submission_date": "2024-11-18",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Desenvolvimento de Plataforma Digital para Serviços Públicos",
+	  "type": "Tecnologia",
+	  "institution": "Agência para a Modernização Administrativa",
+	  "price": "1.800.000€",
+	  "publish_date": "2024-09-10",
+	  "submission_date": "2024-12-09",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Expansão da Rede de Transporte Público Elétrico",
+	  "type": "Transportes",
+	  "institution": "Câmara Municipal de Sintra",
+	  "price": "3.000.000€",
+	  "publish_date": "2024-07-15",
+	  "submission_date": "2024-10-13",
+	  "location": "Sintra"
+	},
+	{
+	  "name": "Reabilitação de Monumentos Históricos",
+	  "type": "Cultura",
+	  "institution": "Direção-Geral do Património Cultural",
+	  "price": "2.500.000€",
+	  "publish_date": "2024-08-05",
+	  "submission_date": "2024-11-03",
+	  "location": "Évora"
+	},
+	{
+	  "name": "Implementação de Sistema de Gestão de Resíduos",
+	  "type": "Ambiente",
+	  "institution": "Agência Portuguesa do Ambiente",
+	  "price": "1.000.000€",
+	  "publish_date": "2024-09-15",
+	  "submission_date": "2024-12-14",
+	  "location": "Leiria"
+	},
+	{
+	  "name": "Construção de Habitação Social",
+	  "type": "Construção",
+	  "institution": "Câmara Municipal de Lisboa",
+	  "price": "8.000.000€",
+	  "publish_date": "2024-07-30",
+	  "submission_date": "2024-10-28",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Fornecimento de Material Didático para Escolas",
+	  "type": "Educação",
+	  "institution": "Ministério da Educação",
+	  "price": "1.500.000€",
+	  "publish_date": "2024-08-18",
+	  "submission_date": "2024-11-16",
+	  "location": "Porto"
+	},
+	{
+	  "name": "Implementação de Rede de Wi-Fi Público",
+	  "type": "Tecnologia",
+	  "institution": "Câmara Municipal de Coimbra",
+	  "price": "900.000€",
+	  "publish_date": "2024-09-07",
+	  "submission_date": "2024-12-06",
+	  "location": "Coimbra"
+	},
+	{
+	  "name": "Projeto de Reflorestação Nacional",
+	  "type": "Ambiente",
+	  "institution": "Instituto da Conservação da Natureza e das Florestas",
+	  "price": "2.200.000€",
+	  "publish_date": "2024-07-12",
+	  "submission_date": "2024-10-10",
+	  "location": "Guarda"
+	},
+	{
+	  "name": "Ampliação do Aeroporto Internacional",
+	  "type": "Transportes",
+	  "institution": "ANA Aeroportos de Portugal",
+	  "price": "15.000.000€",
+	  "publish_date": "2024-08-22",
+	  "submission_date": "2024-11-20",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Fornecimento de Serviços de Segurança para Edifícios Públicos",
+	  "type": "Serviços",
+	  "institution": "Ministério da Administração Interna",
+	  "price": "1.300.000€",
+	  "publish_date": "2024-09-12",
+	  "submission_date": "2024-12-11",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Construção de Estação de Tratamento de Águas Residuais",
+	  "type": "Ambiente",
+	  "institution": "Agência Portuguesa do Ambiente",
+	  "price": "4.500.000€",
+	  "publish_date": "2024-07-18",
+	  "submission_date": "2024-10-16",
+	  "location": "Portimão"
+	},
+	{
+	  "name": "Implementação de Programa de Alimentação Escolar",
+	  "type": "Educação",
+	  "institution": "Ministério da Educação",
+	  "price": "2.700.000€",
+	  "publish_date": "2024-08-08",
+	  "submission_date": "2024-11-06",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Renovação da Frota de Autocarros Urbanos",
+	  "type": "Transportes",
+	  "institution": "Câmara Municipal de Cascais",
+	  "price": "3.600.000€",
+	  "publish_date": "2024-09-02",
+	  "submission_date": "2024-12-01",
+	  "location": "Cascais"
+	},
+	{
+	  "name": "Desenvolvimento de Aplicação Móvel para Serviços de Saúde",
+	  "type": "Tecnologia",
+	  "institution": "Serviço Nacional de Saúde",
+	  "price": "1.100.000€",
+	  "publish_date": "2024-07-22",
+	  "submission_date": "2024-10-20",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Fornecimento de Alimentos para Instituições Públicas",
+	  "type": "Catering",
+	  "institution": "Direção-Geral de Compras Governamentais",
+	  "price": "2.000.000€",
+	  "publish_date": "2024-08-12",
+	  "submission_date": "2024-11-10",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Construção de Biblioteca Municipal",
+	  "type": "Cultura",
+	  "institution": "Câmara Municipal de Santarém",
+	  "price": "1.800.000€",
+	  "publish_date": "2024-09-17",
+	  "submission_date": "2024-12-16",
+	  "location": "Santarém"
+	},
+	{
+	  "name": "Implementação de Sistema de Iluminação Pública LED",
+	  "type": "Energia",
+	  "institution": "EDP Distribuição",
+	  "price": "2.500.000€",
+	  "publish_date": "2024-07-28",
+	  "submission_date": "2024-10-26",
+	  "location": "Viana do Castelo"
+	},
+	{
+	  "name": "Reabilitação de Estradas Nacionais",
+	  "type": "Infraestruturas",
+	  "institution": "Infraestruturas de Portugal",
+	  "price": "7.000.000€",
+	  "publish_date": "2024-08-02",
+	  "submission_date": "2024-10-31",
+	  "location": "Todo o país"
+	},
+	{
+	  "name": "Fornecimento de Serviços de Limpeza para Edifícios Públicos",
+	  "type": "Serviços",
+	  "institution": "Ministério da Administração Interna",
+	  "price": "800.000€",
+	  "publish_date": "2024-09-14",
+	  "submission_date": "2024-12-13",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Construção de Centro de Saúde Familiar",
+	  "type": "Saúde",
+	  "institution": "Administração Regional de Saúde do Norte",
+	  "price": "3.200.000€",
+	  "publish_date": "2024-07-08",
+	  "submission_date": "2024-10-06",
+	  "location": "Bragança"
+	},
+	{
+	  "name": "Implementação de Programa de Formação Profissional",
+	  "type": "Educação",
+	  "institution": "Instituto do Emprego e Formação Profissional",
+	  "price": "1.600.000€",
+	  "publish_date": "2024-08-16",
+	  "submission_date": "2024-11-14",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Desenvolvimento de Sistema de Gestão Hospitalar",
+	  "type": "Tecnologia",
+	  "institution": "Ministério da Saúde",
+	  "price": "2.300.000€",
+	  "publish_date": "2024-09-04",
+	  "submission_date": "2024-12-03",
+	  "location": "Porto"
+	},
+	{
+	  "name": "Fornecimento de Veículos Elétricos para Serviços Públicos",
+	  "type": "Transportes",
+	  "institution": "Ministério do Ambiente",
+	  "price": "4.000.000€",
+	  "publish_date": "2024-07-26",
+	  "submission_date": "2024-10-24",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Requalificação de Parques e Jardins Públicos",
+	  "type": "Urbanismo",
+	  "institution": "Câmara Municipal de Almada",
+	  "price": "2.100.000€",
+	  "publish_date": "2024-08-06",
+	  "submission_date": "2024-11-04",
+	  "location": "Almada"
+	},
+	{
+	  "name": "Implementação de Sistema de Videovigilância Urbana",
+	  "type": "Segurança",
+	  "institution": "Câmara Municipal de Gaia",
+	  "price": "1.400.000€",
+	  "publish_date": "2024-09-16",
+	  "submission_date": "2024-12-15",
+	  "location": "Vila Nova de Gaia"
+	},
+	{
+	  "name": "Construção de Centro Cultural Municipal",
+	  "type": "Cultura",
+	  "institution": "Câmara Municipal de Matosinhos",
+	  "price": "2.600.000€",
+	  "publish_date": "2024-07-14",
+	  "submission_date": "2024-10-12",
+	  "location": "Matosinhos"
+	},
+	{
+	  "name": "Fornecimento de Serviços de Tradução e Interpretação",
+	  "type": "Serviços",
+	  "institution": "Ministério dos Negócios Estrangeiros",
+	  "price": "900.000€",
+	  "publish_date": "2024-08-24",
+	  "submission_date": "2024-11-22",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Renovação da Rede Elétrica Nacional",
+	  "type": "Energia",
+	  "institution": "REN - Redes Energéticas Nacionais",
+	  "price": "10.000.000€",
+	  "publish_date": "2024-09-06",
+	  "submission_date": "2024-12-05",
+	  "location": "Todo o país"
+	},
+	{
+	  "name": "Construção de Pavilhão Polidesportivo",
+	  "type": "Desporto",
+	  "institution": "Câmara Municipal de Oeiras",
+	  "price": "3.100.000€",
+	  "publish_date": "2024-07-16",
+	  "submission_date": "2024-10-14",
+	  "location": "Oeiras"
+	},
+	{
+	  "name": "Fornecimento de Equipamentos de Segurança para Bombeiros",
+	  "type": "Segurança",
+	  "institution": "Autoridade Nacional de Emergência e Proteção Civil",
+	  "price": "1.500.000€",
+	  "publish_date": "2024-08-14",
+	  "submission_date": "2024-11-12",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Implementação de Sistema de Gestão de Tráfego",
+	  "type": "Tecnologia",
+	  "institution": "Câmara Municipal de Lisboa",
+	  "price": "2.800.000€",
+	  "publish_date": "2024-09-18",
+	  "submission_date": "2024-12-17",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Reabilitação de Escolas Públicas",
+	  "type": "Educação",
+	  "institution": "Ministério da Educação",
+	  "price": "5.500.000€",
+	  "publish_date": "2024-07-06",
+	  "submission_date": "2024-10-04",
+	  "location": "Porto"
+	},
+	{
+	  "name": "Fornecimento de Serviços de Consultoria Financeira",
+	  "type": "Serviços",
+	  "institution": "Ministério das Finanças",
+	  "price": "1.200.000€",
+	  "publish_date": "2024-08-04",
+	  "submission_date": "2024-11-02",
+	  "location": "Lisboa"
+	},
+	{
+	  "name": "Construção de Centro de Tecnologias Avançadas",
+	  "type": "Tecnologia",
+	  "institution": "Fundação para a Ciência e a Tecnologia",
+	  "price": "4.700.000€",
+	  "publish_date": "2024-09-08",
+	  "submission_date": "2024-12-07",
+	  "location": "Aveiro"
+	},
+	{
+	  "name": "Implementação de Sistema de Defesa Costeira",
+	  "type": "Ambiente",
+	  "institution": "Agência Portuguesa do Ambiente",
+	  "price": "3.900.000€",
+	  "publish_date": "2024-07-24",
+	  "submission_date": "2024-10-22",
+	  "location": "Figueira da Foz"
+	}
+  ]
+  
