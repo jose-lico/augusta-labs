@@ -14,9 +14,7 @@ function renderSkeletons() {
 
 function renderContests(contests: Contest[]) {
   return contests.map((contest, i) => (
-    <div key={i}>
-      <ContestCard contest={contest}></ContestCard>
-    </div>
+    <ContestCard key={i} contest={contest}></ContestCard>
   ));
 }
 
@@ -41,7 +39,8 @@ export default function Dashboard() {
   return (
     <div
       className="
-        container mx-auto p-6 
+        container mx-auto py-4 px-4
+        md:py-6 
         lg:grid lg:grid-cols-11 lg:gap-8 lg:p-10"
     >
       <div className="hidden lg:block col-span-4 rounded-lg border p-6 max-h-60 bg-white shadow-sm sticky top-10 z-10">
@@ -49,8 +48,8 @@ export default function Dashboard() {
       </div>
       <div
         className="
-        space-y-8 
-        lg:col-span-7 "
+        space-y-4
+        lg:space-y-8 lg:col-span-7"
       >
         {loading ? renderSkeletons() : renderContests(contests)}
       </div>

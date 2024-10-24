@@ -1,3 +1,3 @@
 .card-base {
-	@apply min-h-64 max-h-[700px] w-full p-6 border rounded-lg shadow-sm bg-white;
+	@apply min-h-64 max-h-[700px] w-full p-4 lg:p-6 border rounded-lg shadow-sm bg-white;
 }

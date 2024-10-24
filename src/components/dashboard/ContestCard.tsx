@@ -7,6 +7,8 @@ import {
   Calendar,
   ClockAlert,
   LoaderCircle,
+  MapPin,
+  MoveDown,
   MoveRight,
   Sparkles,
 } from "lucide-react";
@@ -16,19 +18,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Contest } from "@/types/contest";
 
 import "./styles.css";
-
-function relevantTag() {
-  return (
-    <div
-      className="
-      max-w-max px-2 py-1 
-      rounded-xl border border-green-300 bg-green-200 
-      text-[15px] tracking-tight font-[family-name:var(--font-geist-sans)] text-green-700 font-medium"
-    >
-      <p>Muito Relevante</p>
-    </div>
-  );
-}
+import RelevantTag from "./RelevantTag";
 
 function ptDate(
   date: Date,
@@ -37,10 +27,10 @@ function ptDate(
 ) {
   return (
     <div className="flex flex-col items-center space-y-0.5">
-      <small className="text-slate-600">{name}</small>
+      <small className="text-slate-600 text-center">{name}</small>
       <div className="flex items-center space-x-1.5">
         <Icon className="w-4 h-4" />
-        <time className="text-[15px]">
+        <time className="text-[15px] lg:hidden 2xl:block">
           {(() => {
             const dateStr = new Date(date).toLocaleString("pt-PT", {
               day: "numeric",
@@ -51,6 +41,15 @@ function ptDate(
             return `${day} ${month.charAt(0).toUpperCase()}${month.slice(
               1
             )} ${year}`;
+          })()}
+        </time>
+        <time className="text-[15px] hidden lg:block 2xl:hidden">
+          {(() => {
+            return new Date(date).toLocaleString("pt-PT", {
+              day: "numeric",
+              month: "numeric",
+              year: "numeric",
+            });
           })()}
         </time>
       </div>
@@ -87,11 +86,11 @@ function aiButtonText(state: AIState) {
 function generateAIText(aiState: AIState) {
   return (
     <div
-      className="space-y-2 overflow-scroll"
+      className="space-y-2 overflow-scroll pr-4 mt-3 text-justify"
       style={{
-        marginTop: aiState == AIState.Open ? "12px" : "0px",
         height: aiState == AIState.Open ? "256px" : "0px",
-        transitionDuration: "500ms",
+        transitionDuration: "350ms",
+        transitionTimingFunction: "ease-in-out",
       }}
     >
       <p>
@@ -165,36 +164,68 @@ export default function ContextCard({ contest }: ContestItemProps) {
   return (
     <div
       className="
+        !pb-3
         card-base
         flex flex-col space-y-3
-        overflow-clip
         transition-all duration-250
         lg:hover:shadow-md lg:transition-all duration-250" // lg:hover:-translate-y-1 lg:hover:-translate-x-1 lg:transition-[transform,box-shadow] lg:duration-250
     >
-      <div className="grid grid-cols-12 gap-8 h-36">
-        <div className="col-span-7 space-y-1 flex flex-col justify-between">
-          <div>
+      <div className="lg:h-36 lg:grid lg:grid-cols-12 lg:gap-8">
+        <div
+          className="
+          flex flex-col
+          lg:justify-between lg:col-span-7"
+        >
+          <div
+            className="
+            text-center space-y-1 
+            lg:text-left"
+          >
             <h3 className="text-2xl font-bold">{contest.name}</h3>
             <h6 className="">{contest.institution}</h6>
           </div>
-          {contest.type === "Transportes" && relevantTag()}
+          {contest.type === "Transportes" && (
+            <RelevantTag className="hidden xl:block" />
+          )}
         </div>
-        <div className="col-span-5 flex flex-col justify-between">
-          <div className="grid justify-items-center">
-            <small className="text-slate-600">Preço Base</small>
-            <p className="text-xl font-semibold">{contest.price}</p>
+        <div
+          className="
+          flex items-center justify-evenly mt-6
+          lg:flex-col lg:justify-between lg:col-span-5 lg:mt-2"
+        >
+          <div className="space-y-6">
+            <div className="text-center">
+              <small className="text-slate-600">Preço Base</small>
+              <p className="text-xl font-semibold">{contest.price}</p>
+            </div>
+            {contest.type === "Transportes" && (
+              <RelevantTag className="block md:hidden" />
+            )}
           </div>
-          <div className="flex justify-between items-center">
+          <div
+            className="
+            flex flex-col justify-between items-center space-y-2 
+            lg:flex-row lg:space-y-0"
+          >
             {ptDate(contest.publish_date, "Data de Publicação", Calendar)}
-            <MoveRight />
+            <MoveRight className="hidden lg:block" />
+            <MoveDown className="block lg:hidden" />
             {ptDate(contest.submission_date, "Prazo de Submissão", ClockAlert)}
           </div>
         </div>
       </div>
-      <div className="">
+      <div>
         <hr></hr>
-        <div className="flex justify-between items-center pt-3">
-          <div className="space-x-4">
+        <div
+          className="
+          flex justify-evenly items-center pt-3
+          sm:space-x-3 sm:justify-between"
+        >
+          <div
+            className="
+            flex flex-col space-y-3 
+            sm:flex-row sm:space-y-0 sm:space-x-4"
+          >
             <Button
               disabled={aiState == AIState.Loading}
               className="
@@ -221,8 +252,8 @@ export default function ContextCard({ contest }: ContestItemProps) {
                 toast({
                   description: contest.name,
                   title: "Adicionado à lista de favoritos.",
-                  className: "mt-4",
-                  duration: 4000,
+                  className: "mb-4 md:mb-0 md:mt-4",
+                  duration: 3500,
                   action: (
                     <ToastAction altText="Cancelar">Cancelar</ToastAction>
                   ),
@@ -230,10 +261,13 @@ export default function ContextCard({ contest }: ContestItemProps) {
               }}
             >
               <Bookmark />
-              <span>Guardaaaar</span>
+              <span>Guardar</span>
             </Button>
           </div>
-          <p>{contest.location}</p>
+          <div className="flex items-center space-x-1">
+            <MapPin size={20} />
+            <p className="text-center">{contest.location}</p>
+          </div>
         </div>
         {generateAIText(aiState)}
       </div>
