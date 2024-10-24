@@ -16,9 +16,9 @@ import { Button } from "@/components/ui/button";
 import { ToastAction } from "@/components/ui/toast";
 import { useToast } from "@/hooks/use-toast";
 import { Contest } from "@/types/contest";
+import RelevantTag from "./RelevantTag";
 
 import "./styles.css";
-import RelevantTag from "./RelevantTag";
 
 function ptDate(
   date: Date,
@@ -185,7 +185,7 @@ export default function ContextCard({ contest }: ContestItemProps) {
             <h6 className="">{contest.institution}</h6>
           </div>
           {contest.type === "Transportes" && (
-            <RelevantTag className="hidden xl:block" />
+            <RelevantTag className="hidden lg:block" />
           )}
         </div>
         <div
@@ -199,7 +199,7 @@ export default function ContextCard({ contest }: ContestItemProps) {
               <p className="text-xl font-semibold">{contest.price}</p>
             </div>
             {contest.type === "Transportes" && (
-              <RelevantTag className="block md:hidden" />
+              <RelevantTag className="block lg:hidden" />
             )}
           </div>
           <div
@@ -264,9 +264,9 @@ export default function ContextCard({ contest }: ContestItemProps) {
               <span>Guardar</span>
             </Button>
           </div>
-          <div className="flex items-center space-x-1">
+          <div className="flex items-center space-x-1 min-w-[160px] justify-center md:justify-end">
             <MapPin size={20} />
-            <p className="text-center">{contest.location}</p>
+            <p>{contest.location}</p>
           </div>
         </div>
         {generateAIText(aiState)}

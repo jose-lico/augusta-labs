@@ -5,6 +5,16 @@ import { useEffect, useState } from "react";
 import ContestCard from "@/components/dashboard/ContestCard";
 import ContextCardSkeleton from "@/components/dashboard/ContextCardSkeleton";
 import { Contest } from "@/types/contest";
+import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 
 function renderSkeletons() {
   return Array.from({ length: 10 }).map((_, i) => (
@@ -38,18 +48,44 @@ export default function Dashboard() {
 
   return (
     <div
-      className="
+      className="relative 
         container mx-auto py-4 px-4
         md:py-6 
-        lg:grid lg:grid-cols-11 lg:gap-8 lg:p-10"
+        lg:grid lg:grid-cols-10 lg:gap-8 lg:p-10
+        xl:grid-cols-11"
     >
-      <div className="hidden lg:block col-span-4 rounded-lg border p-6 max-h-60 bg-white shadow-sm sticky top-10 z-10">
-        Filters
+      <div
+        className="
+        hidden 
+        rounded-lg border p-6 max-h-60 bg-white shadow-sm sticky top-10 z-10
+        lg:block lg:col-span-3 
+        xl:col-span-4
+        "
+      >
+        Filtros, Ordenar por
       </div>
+      <Sheet>
+        <SheetTrigger asChild>
+          <Button
+            size={"icon"}
+            className="sticky top-4 md:top-6 lg:hidden rounded-full"
+          >
+            <Menu />
+          </Button>
+        </SheetTrigger>
+        <SheetContent side={"left"}>
+          <SheetHeader>
+            <SheetTitle>Filtros, Ordenar por</SheetTitle>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
       <div
         className="
         space-y-4
-        lg:space-y-8 lg:col-span-7"
+        mt-[-36px]
+        lg:mt-0
+        lg:col-span-7 lg:space-y-8 
+        xl:col-span-7"
       >
         {loading ? renderSkeletons() : renderContests(contests)}
       </div>
