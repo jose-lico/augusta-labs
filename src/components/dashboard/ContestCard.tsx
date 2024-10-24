@@ -230,7 +230,7 @@ export default function ContextCard({ contest }: ContestItemProps) {
               }}
             >
               <Bookmark />
-              <span>Guardar</span>
+              <span>Guardaaaar</span>
             </Button>
           </div>
           <p>{contest.location}</p>
